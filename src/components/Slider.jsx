@@ -15,15 +15,23 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 // import Swiper core and required modules
-import SwiperCore, { EffectCards } from "swiper";
+import SwiperCore, { EffectCards, Autoplay } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([EffectCards]);
+SwiperCore.use([EffectCards, Autoplay]);
 
 const Slider = () => {
   return (
     <div className="card-Slaider">
-      <Swiper effect={"cards"} grabCursor={true} className="mySwiper">
+      <Swiper
+        effect={"cards"}
+        grabCursor={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        className="mySwiper"
+      >
         <SwiperSlide className="rounded-md">
           <img src={ras1} alt="1" />
         </SwiperSlide>
