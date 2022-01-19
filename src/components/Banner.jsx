@@ -6,36 +6,34 @@ import html from "./images/html.svg";
 import figma from "./images/figma.svg";
 import css from "./images/css.svg";
 import js from "./images/js.svg";
-import react from "./images/react.svg";
+import reactimg from "./images/react.svg";
 import sanity from "./images/sanity.png";
 import tailwind from "./images/tailwind.svg";
 import wordpress from "./images/wordpress.svg";
 
 const Banner = () => {
   return (
-    <div className="relative flex justify-around items-center flex-wrap code">
+    <div className="relative flex justify-around items-center flex-wrap code overflow-hidden">
       <div className="text-white md:w-4/12 w-full md:ml-8 ml-4">
         <div className="opacity-40">&lt;body&gt;</div>
         <div className="opacity-40">&emsp;&lt;whoami&gt;</div>
-        <div className="text-5xl text-pink-600 code-font my-2 ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
+        <div className="text-5xl text-pink-600 code-font my-2 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
           Hi,
           <br />
           I'm, RASHEED
         </div>
         <div className="opacity-40">&emsp;&lt;&#47;whoami&gt;</div>
         <div className="opacity-40">&emsp;&lt;profession&gt;</div>
-        <div className="text-5xl text-pink-600 code-font my-2 ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
+        <div className="text-5xl text-pink-600 code-font my-2 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
           Web Developer
         </div>
         <div className="opacity-40">&emsp;&lt;&#47;profession&gt;</div>
         <div className="opacity-40">&emsp;&lt;aboutme&gt;</div>
-        <div className="text-xl text-slate-300 code-font my-2 ml-12">
+        <div className="text-xl text-slate-300 code-font my-2 md:ml-12">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-
                 .typeString("Front-end Developer | UI/UX Designer")
-
                 .pauseFor(1000)
                 .start();
             }}
@@ -60,7 +58,7 @@ const Banner = () => {
         options={{
           fullScreen: {
             enable: true,
-            zIndex: 1,
+            zIndex: -2,
           },
           detectRetina: true,
           fpsLimit: 60,
@@ -205,7 +203,7 @@ const Banner = () => {
                   height: 20,
                 },
                 {
-                  src: react,
+                  src: reactimg,
                   width: 20,
                   height: 20,
                 },
@@ -258,7 +256,7 @@ const Banner = () => {
             url: "",
           },
           background: {
-            image: "",
+            image: "90vh 90vh",
             position: "50% 50%",
             repeat: "no-repeat",
             size: "cover",
