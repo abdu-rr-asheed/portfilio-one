@@ -1,22 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+.code {
+  font-family: "Source Code Pro", monospace;
+}
+.code-font {
+  font-family: "Play", monospace;
+}
 @layer components {
   #app {
     @apply h-full;
   }
-  .card-Slaider {
-    @apply grid h-screen place-items-center;
+  .card-Slider {
+    @apply flex flex-col h-full justify-center w-full;
   }
   html {
     @apply relative h-full;
   }
   body {
-    @apply relative h-[200vh] text-sm text-black bg-gray-900 m-0 p-0 overflow-y-hidden;
+    @apply relative text-sm text-black bg-gray-900 m-0 p-0;
   }
   .swiper {
-    @apply w-[240px] h-[320px];
+    @apply w-[200px] h-[280px] md:w-[240px] md:h-[320px];
   }
   .swiper-slide {
     @apply flex items-center justify-center text-xl font-bold text-white;
@@ -25,10 +36,10 @@
     @apply w-full;
   }
   .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-600 hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-yellow-500 hover:bg-yellow-600 hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
   }
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max md:bottom-0 bottom-14 md:left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-bottom md:origin-left;
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
   }
   .sidebar-hr {
     @apply bg-gray-800 border border-gray-800 rounded-full mx-2 hidden md:block;

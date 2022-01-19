@@ -13,6 +13,12 @@ module.exports = {
           200: "#ebedef",
           100: "#f2f3f5",
         },
+        yellow: {
+          500: "#FF8906",
+        },
+        pink: {
+          600: "#F25F4C",
+        },
       },
     },
   },

@@ -22,16 +22,15 @@ SwiperCore.use([EffectCards, Autoplay]);
 
 const Slider = () => {
   return (
-    <div className="card-Slaider">
+    <div>
       <Swiper
         effect={"cards"}
         grabCursor={true}
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
-        className="mySwiper"
-      >
+        className="mySwiper">
         <SwiperSlide className="rounded-md">
           <img src={ras1} alt="1" />
         </SwiperSlide>
