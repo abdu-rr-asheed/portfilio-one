@@ -5,7 +5,7 @@ import { FaFingerprint, FaBriefcase, FaFileCode } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div className="relative w-16">
-      <div className="absolute top-0 left-0 right-0 h-12 w-12 m-auto flex items-center justify-center mt-2 z-20 md:mx-2 bg-gray-800 text-yellow-500 hover:bg-white hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear">
+      <div className="absolute top-0 left-0 right-0 h-12 w-12 m-auto flex items-center justify-center mt-2 z-20 mx-2 bg-gray-800 text-yellow-500 hover:bg-white hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear">
         <svg
           width="38"
           height="17"
@@ -22,7 +22,7 @@ const Sidebar = () => {
           />
         </svg>
       </div>
-      <div className="fixed z-10 md:w-16 h-screen m-0 flex flex-col justify-center bg-gray-900 text-white shadow-2xl">
+      <div className="fixed z-10 w-16 h-screen m-0 flex flex-col justify-center bg-gray-900 text-white shadow-2xl">
         <SideBarIcon icon={<FaFingerprint size="24" />} text="About Me" />
         <SideBarIcon icon={<FaBriefcase size="20" />} text="Projects" />
         <SideBarIcon icon={<GiEarthAmerica size="26" />} text="Contact Me" />

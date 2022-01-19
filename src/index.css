@@ -13,6 +13,33 @@ html {
 .code-font {
   font-family: "Play", monospace;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0f0e17;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ff8906, #f25f4c);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#f25f4c, #ff8906);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 @layer components {
   #app {
     @apply h-full;

@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="card-Slider">
+      <div className="card-Slider pl-16">
         <Header />
         <Banner />
         <Aboutme />
-        {/* <Slider /> */}
+        <Slider />
       </div>
     </div>
   );

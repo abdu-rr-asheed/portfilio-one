@@ -15,7 +15,7 @@ import { BsStackOverflow } from "react-icons/bs";
 
 const Aboutme = () => {
   return (
-    <div className="m-4 flex justify-center items-center flex-wrap">
+    <div className="m-4 flex justify-center items-center flex-wrap md:h-screen">
       <div className="md:w-1/2 flex justify-center items-center flex-col">
         <img src={me} alt="me" />
         <div className="flex justify-center items-center my-4">
