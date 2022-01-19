@@ -11,7 +11,7 @@ import sanity from "./images/sanity.png";
 import tailwind from "./images/tailwind.svg";
 import wordpress from "./images/wordpress.svg";
 import lonmrtimg from "./images/londonMart/lmimage.png";
-import lonmrtlogo from "./images/londonMart/logo.png";
+import lonmrtlogo from "./images/londonMart/Logo.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
