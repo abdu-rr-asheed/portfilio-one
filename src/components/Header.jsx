@@ -29,13 +29,13 @@ const Header = () => {
         </div>
       </div>
       <div className="flex items-center">
-        <FaSun fontSize={23} className="md:mx-6 mx-2" color="#FF8906" />
+        <FaSun fontSize={23} className="md:mx-6 mx-1" color="#FF8906" />
         <a
           href={CV}
           download
-          className="px-5 py-1 rounded-3xl mx-2 bg-gradient-to-r from-yellow-500 to-rose-400 hover:bg-gradient-to-r hover:from-rose-400 hover:to-yellow-500 transition-all duration-300 ease-linear uppercase font-semibold flex items-center justify-center">
+          className="md:px-5 px-2 py-1 rounded-3xl mx-2 md:bg-gradient-to-r from-yellow-500 to-rose-400 hover:bg-gradient-to-r hover:from-rose-400 hover:to-yellow-500 transition-all duration-300 ease-linear uppercase font-semibold flex items-center justify-center">
           <span className="md:hidden">
-            <FaFileCode fontSize={23} className="my-2" color="#fff" />
+            <FaFileCode fontSize={23} className="my-1" color="#FF8906" />
           </span>
           <span className="md:block hidden">Resume</span>
         </a>

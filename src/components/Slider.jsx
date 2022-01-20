@@ -119,10 +119,9 @@ const Portfolio = ({
         className="text-white absolute md:bottom-16 md:-right-16 right-0 top-0 md:top-auto flex items-center text-xl tracking-widest"
         style={{ textShadow: "3px 3px 5px #000000" }}>
         <span className="hidden md:inline">View site</span>
-        <ImNewTab
-          fontSize={24}
-          className="ml-2 shadow-2xl m-1 md:text-white text-black"
-        />
+        <span className="md:p-0 p-1 rounded-md md:bg-transparent bg-black md:m-0 m-1">
+          <ImNewTab fontSize={24} className="ml-2 shadow-2xl m-1 text-white" />
+        </span>
       </a>
     </div>
     <p className="md:w-9/12 w-11/12 text-white text-base md:text-left text-center mt-4">

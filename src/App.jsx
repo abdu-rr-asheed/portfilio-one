@@ -15,7 +15,7 @@ function App() {
         <Aboutme />
         <Slider />
       </div>
-      {/* <Sidebar /> */}
+      <Sidebar />
     </div>
   );
 }
