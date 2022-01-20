@@ -14,22 +14,22 @@ import wordpress from "./images/wordpress.svg";
 const Banner = () => {
   return (
     <div className="relative flex justify-around items-center flex-wrap code overflow-hidden">
-      <div className="text-white md:w-4/12 w-full md:ml-8 ml-4">
+      <div className="text-white md:ml-8 ml-4 my-10 md:my-0">
         <div className="opacity-40">&lt;body&gt;</div>
         <div className="opacity-40">&emsp;&lt;whoami&gt;</div>
-        <div className="text-5xl text-pink-600 code-font my-2 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
+        <div className="md:text-6xl text-5xl font-bold code-font my-2 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
           Hi,
           <br />
           I'm, RASHEED
         </div>
         <div className="opacity-40">&emsp;&lt;&#47;whoami&gt;</div>
         <div className="opacity-40">&emsp;&lt;profession&gt;</div>
-        <div className="text-5xl text-pink-600 code-font my-2 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
+        <div className="md:text-6xl text-5xl font-bold code-font my-2 md:ml-12 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
           Web Developer
         </div>
         <div className="opacity-40">&emsp;&lt;&#47;profession&gt;</div>
         <div className="opacity-40">&emsp;&lt;aboutme&gt;</div>
-        <div className="text-xl text-slate-300 code-font my-2 md:ml-12">
+        <div className="text-2xl text-slate-300 code-font my-2 md:ml-12">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -42,7 +42,7 @@ const Banner = () => {
         <div className="opacity-40">&emsp;&lt;&#47;aboutme&gt;</div>
         <div className="opacity-40">&lt;&#47;body&gt;</div>
       </div>
-      <div className="relative md:h-[90vh] h-[500px] md:w-6/12 w-full">
+      <div className="relative md:h-[90vh] h-[500px] my-10 md:my-0">
         <iframe
           src="https://my.spline.design/charactor-389faed3c836ddc49c274b15d22eba47/"
           className="md:h-[90vh] h-[500px] w-full"></iframe>

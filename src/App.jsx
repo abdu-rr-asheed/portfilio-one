@@ -9,13 +9,13 @@ import Slider from "./components/Slider";
 function App() {
   return (
     <div className="flex">
-      <Sidebar />
-      <div className="card-Slider pl-16">
+      <div className="card-Slider">
         <Header />
         <Banner />
         <Aboutme />
         <Slider />
       </div>
+      {/* <Sidebar /> */}
     </div>
   );
 }

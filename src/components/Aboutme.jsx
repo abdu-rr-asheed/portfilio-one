@@ -16,37 +16,37 @@ import { BsStackOverflow } from "react-icons/bs";
 const Aboutme = () => {
   return (
     <div className="m-4 flex justify-center items-center flex-wrap md:h-screen">
-      <div className="md:w-1/2 flex justify-center items-center flex-col">
+      <div className="md:w-1/2 flex justify-center items-center flex-col  my-10 md:my-0">
         <img src={me} alt="me" />
         <div className="flex justify-center items-center my-4">
           <a
             href=""
             target="_blank"
-            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2">
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
             <FaFacebookF fontSize={20} />
           </a>
           <a
             href=""
             target="_blank"
-            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2">
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out duration-100 hover:-translate-y-1 hover:scale-110">
             <AiFillGithub fontSize={20} />
           </a>
           <a
             href=""
             target="_blank"
-            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2">
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
             <BsStackOverflow fontSize={20} />
           </a>
           <a
             href=""
             target="_blank"
-            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2">
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
             <FaLinkedinIn fontSize={20} />
           </a>
         </div>
       </div>
-      <div className="text-white md:w-1/2">
-        <div className="text-white w-full ">
+      <div className="text-white md:w-1/2 grid place-items-center  my-10 md:my-0">
+        <div className="text-white md:w-10/12">
           <div className="opacity-40">&lt;section&gt;</div>
           <div className="opacity-40">&emsp;&lt;h2&gt;</div>
           <div className="text-5xl text-pink-600 code-font my-2 md:ml-12 font-bold">
@@ -54,7 +54,7 @@ const Aboutme = () => {
           </div>
           <div className="opacity-40">&emsp;&lt;&#47;h2&gt;</div>
           <div className="opacity-40">&emsp;&lt;p&gt;</div>
-          <div className="text-sm text-white my-2 md:ml-12 md:w-3/4 text-justify">
+          <div className="text-sm text-white my-2 md:ml-12 text-justify">
             My name is Abdur Rasheed, I'm a Web Developer with a great passion
             for Developing. I describe myself as a passionate developer who
             loves coding and the web platform.
