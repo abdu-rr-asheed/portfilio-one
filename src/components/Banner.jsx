@@ -47,6 +47,7 @@ const Banner = () => {
           src="https://my.spline.design/charactor-389faed3c836ddc49c274b15d22eba47/"
           className="md:h-[90vh] h-[500px] w-full"></iframe>
         <div className="absolute bottom-[10px] right-[10px] rounded-full w-10 h-10 bg-gray-900"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-transparent md:hidden"></div>
       </div>
       <img
         src={balls}
