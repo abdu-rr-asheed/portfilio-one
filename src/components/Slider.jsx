@@ -13,7 +13,7 @@ import wordpress from "./images/wordpress.svg";
 import lonmrtimg from "./images/londonMart/lmimage.png";
 import lonmrtlogo from "./images/londonMart/Logo.png";
 import sharemeimg from "./images/shareme/image.png";
-import sharemelogo from "./images/shareme/Logo.png";
+import sharemelogo from "./images/shareme/logo.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
