@@ -6,13 +6,17 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Slider from "./components/Slider";
 
+// import ScrollToButton from "./components/ScrollToButton";
+const sectionId = ["hero", "about", "portfolio", "skills", "contact"];
+
 function App() {
+  const descriptionRef = React.useRef(null);
   return (
     <div className="flex">
       <div className="card-Slider">
         <Header />
         <Banner />
-        <Aboutme />
+        <Aboutme id={sectionId[1]} />
         <Slider />
       </div>
       <Sidebar />
