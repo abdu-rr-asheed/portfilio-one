@@ -45,7 +45,7 @@ const Banner = () => {
       <div className="relative md:h-[90vh] h-[500px] my-10 md:my-0 md:w-1/2 w-full">
         <iframe
           src="https://my.spline.design/charactor-389faed3c836ddc49c274b15d22eba47/"
-          frameborder="0"
+          frameBorder="0"
           width="100%"
           height="100%"></iframe>
         <div className="absolute bottom-[10px] right-[10px] rounded-full w-10 h-10 bg-gray-900"></div>
