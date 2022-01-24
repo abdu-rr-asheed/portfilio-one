@@ -4,6 +4,7 @@ import Aboutme from "./components/Aboutme";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+import Skills from "./components/Skills";
 import Slider from "./components/Slider";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Banner />
         <Aboutme />
         <Slider />
+        <Skills />
       </div>
       <Sidebar />
     </div>

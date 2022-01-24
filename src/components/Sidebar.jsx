@@ -6,8 +6,16 @@ const Sidebar = () => {
   return (
     <div className="fixed right-0 top-0 z-10 md:block hidden">
       <div className="w-16 h-screen m-0 flex flex-col justify-center text-white">
-        <SideBarIcon icon={<FaFingerprint size="24" />} text="About Me" />
-        <SideBarIcon icon={<FaBriefcase size="20" />} text="Projects" />
+        <SideBarIcon
+          icon={<FaFingerprint size="24" />}
+          text="About Me"
+          link="#about"
+        />
+        <SideBarIcon
+          icon={<FaBriefcase size="20" />}
+          text="Projects"
+          link="#portfolio"
+        />
         <SideBarIcon icon={<GiEarthAmerica size="26" />} text="Contact Me" />
         <SideBarIcon icon={<GiSkills size="26" />} text="Skills" />
         <SideBarIcon icon={<FaFileCode size="22" />} text="Resume" />
@@ -16,12 +24,12 @@ const Sidebar = () => {
   );
 };
 
-const SideBarIcon = ({ icon, text }) => (
-  <div className="sidebar-icon group">
+const SideBarIcon = ({ icon, text, link }) => (
+  <a href={link} className="sidebar-icon group">
     {icon}
 
     <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
-  </div>
+  </a>
 );
 
 export default Sidebar;

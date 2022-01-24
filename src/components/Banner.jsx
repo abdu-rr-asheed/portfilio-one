@@ -13,7 +13,9 @@ import wordpress from "./images/wordpress.svg";
 
 const Banner = () => {
   return (
-    <div className="relative flex justify-around items-center flex-wrap code overflow-hidden w-full">
+    <div
+      className="relative flex justify-around items-center flex-wrap code overflow-hidden w-full"
+      id="hero">
       <div className="text-white md:pl-24 pl-4 my-10 md:my-0 md:w-1/2 w-full">
         <div className="opacity-40">&lt;body&gt;</div>
         <div className="opacity-40">&emsp;&lt;whoami&gt;</div>

@@ -1,0 +1,12 @@
+export { default as html } from "./images/html.svg";
+export { default as figma } from "./images/figma.svg";
+export { default as css } from "./images/css.svg";
+export { default as js } from "./images/js.svg";
+export { default as reactimg } from "./images/react.svg";
+export { default as sanity } from "./images/sanity.png";
+export { default as tailwind } from "./images/tailwind.svg";
+export { default as wordpress } from "./images/wordpress.svg";
+export { default as xd } from "./images/xd.svg";
+export { default as spline } from "./images/spline.png";
+export { default as blender } from "./images/blender.svg";
+export { default as octobercms } from "./images/octobercms.png";
