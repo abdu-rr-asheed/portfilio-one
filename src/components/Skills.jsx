@@ -25,6 +25,7 @@ import "swiper/css/effect-cards";
 
 // import Swiper core and required modules
 import SwiperCore, { EffectCards } from "swiper";
+import Heading from "./Heading";
 
 // install Swiper modules
 SwiperCore.use([EffectCards]);
@@ -32,6 +33,7 @@ SwiperCore.use([EffectCards]);
 const Skills = () => {
   return (
     <>
+      <Heading title="Skills" />
       <div className="flex justify-around items-center flex-wrap overflow-x-hidden">
         <div className="w-[310px] h-[400px] my-7 mx-2">
           <Swiper effect={"cards"} grabCursor={true}>

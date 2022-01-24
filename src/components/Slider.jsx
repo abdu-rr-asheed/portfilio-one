@@ -29,89 +29,93 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import SwiperCore, { Autoplay, Pagination } from "swiper";
+import Heading from "./Heading";
 
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination]);
 
 const Slider = () => {
   return (
-    <div className="w-full" id="portfolio">
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        loop={false}
-        autoplay={{
-          delay: 40000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          dynamicBullets: true,
-        }}
-        className="">
-        <SwiperSlide>
-          <Portfolio
-            portImg={xmobileimg}
-            imgColor="#2c353d"
-            portLogo={sharemelogo}
-            progLang={[reactimg, sanity, tailwind]}
-            siteLink="https://rasheedshareme.netlify.app/"
-            description="This Web application Full Stack Social Media Application. build with React, Tailwind and Sanity.Login with Google-Auth ,Upload image, Delete image, Save image, Download image, Comment by User. Admin can manage the Backend."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Portfolio
-            portImg={lonmrtimg}
-            imgColor="#c5302e"
-            portLogo={lonmrtlogo}
-            progLang={[wordpress]}
-            figmaLink="https://www.figma.com/proto/PwdhraYAPexkAjJm3ueIK0/LondonMart?page-id=0%3A1&node-id=2%3A2&scaling=scale-down-width"
-            siteLink="https://londonmart.lk/"
-            description="This e-commerce site made by Wordpress. I Design User interface and User Experience"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Portfolio
-            portImg={xmobileimg}
-            imgColor="#044e81"
-            portLogo={xmobilelogo}
-            progLang={[html, css, js]}
-            figmaLink="https://www.figma.com/proto/I62oGu2dE9YykIuQx5T5aC/X-Mobile-Mockup?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.05&scaling=scale-down-width"
-            siteLink="https://abdu-rr-asheed.github.io/xmobile/"
-            description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Portfolio
-            portImg={rscimg}
-            imgColor="#313946"
-            portLogo={rsclogo}
-            progLang={[html, css, js]}
-            figmaLink="https://www.figma.com/proto/Vhy5kUFRdjNqcyVLZ6iXn5/RSC-Design?page-id=0%3A1&node-id=56%3A0&viewport=241%2C48%2C0.04&scaling=scale-down-width&starting-point-node-id=1%3A2"
-            siteLink="https://abdu-rr-asheed.github.io/royalSC/"
-            description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Portfolio
-            portImg={phloximg}
-            imgColor="#284f47"
-            portLogo={phloxlogo}
-            progLang={[wordpress]}
-            siteLink="http://ecommercewordpress.epizy.com/"
-            description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Portfolio
-            portImg={foodcoimg}
-            imgColor="#777a4b"
-            portLogo={foodcologo}
-            figmaLink="https://www.figma.com/proto/I62oGu2dE9YykIuQx5T5aC/X-Mobile-Mockup?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.05&scaling=scale-down-width"
-            description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
-          />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+    <>
+      <Heading title="Portfolio" />
+      <div className="w-full" id="portfolio">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          loop={false}
+          autoplay={{
+            delay: 40000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          className="">
+          <SwiperSlide>
+            <Portfolio
+              portImg={sharemeimg}
+              imgColor="#2c353d"
+              portLogo={sharemelogo}
+              progLang={[reactimg, sanity, tailwind]}
+              siteLink="https://rasheedshareme.netlify.app/"
+              description="This Web application Full Stack Social Media Application. build with React, Tailwind and Sanity.Login with Google-Auth ,Upload image, Delete image, Save image, Download image, Comment by User. Admin can manage the Backend."
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Portfolio
+              portImg={lonmrtimg}
+              imgColor="#c5302e"
+              portLogo={lonmrtlogo}
+              progLang={[html, css, js]}
+              figmaLink="https://www.figma.com/proto/PwdhraYAPexkAjJm3ueIK0/LondonMart?page-id=0%3A1&node-id=2%3A2&scaling=scale-down-width"
+              siteLink="https://abdu-rr-asheed.github.io/londonMart/"
+              description="This e-commerce site made by Wordpress. I Design User interface and User Experience"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Portfolio
+              portImg={xmobileimg}
+              imgColor="#044e81"
+              portLogo={xmobilelogo}
+              progLang={[html, css, js]}
+              figmaLink="https://www.figma.com/proto/I62oGu2dE9YykIuQx5T5aC/X-Mobile-Mockup?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.05&scaling=scale-down-width"
+              siteLink="https://abdu-rr-asheed.github.io/xmobile/"
+              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Portfolio
+              portImg={rscimg}
+              imgColor="#313946"
+              portLogo={rsclogo}
+              progLang={[html, css, js]}
+              figmaLink="https://www.figma.com/proto/Vhy5kUFRdjNqcyVLZ6iXn5/RSC-Design?page-id=0%3A1&node-id=56%3A0&viewport=241%2C48%2C0.04&scaling=scale-down-width&starting-point-node-id=1%3A2"
+              siteLink="https://abdu-rr-asheed.github.io/royalSC/"
+              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Portfolio
+              portImg={phloximg}
+              imgColor="#284f47"
+              portLogo={phloxlogo}
+              progLang={[wordpress]}
+              siteLink="http://ecommercewordpress.epizy.com/"
+              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Portfolio
+              portImg={foodcoimg}
+              imgColor="#777a4b"
+              portLogo={foodcologo}
+              figmaLink="https://www.figma.com/proto/I62oGu2dE9YykIuQx5T5aC/X-Mobile-Mockup?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.05&scaling=scale-down-width"
+              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </>
   );
 };
 
@@ -126,7 +130,7 @@ const Portfolio = ({
   siteLink,
   description,
 }) => (
-  <div className="w-full grid place-items-center h-full md:mt-32 my-16">
+  <div className="w-full grid place-items-center h-full md:mt-20 my-16">
     <div className="relative md:w-9/12 w-11/12">
       <img
         src={portImg}
@@ -160,6 +164,7 @@ const Portfolio = ({
       {siteLink && (
         <a
           href={siteLink}
+          target="_blank"
           className="text-white absolute md:bottom-16 md:-right-16 right-0 top-0 md:top-auto flex items-center text-xl tracking-widest"
           style={{ textShadow: "3px 3px 5px #000000" }}>
           <span className="hidden md:inline">View site</span>

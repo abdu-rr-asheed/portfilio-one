@@ -37,7 +37,7 @@ const Header = () => {
           <span className="md:hidden">
             <FaFileCode fontSize={23} className="my-1" color="#FF8906" />
           </span>
-          <span className="md:block hidden">Resume</span>
+          <span className="md:block hidden">CV</span>
         </a>
       </div>
     </div>
