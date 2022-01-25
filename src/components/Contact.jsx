@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import Heading from "./Heading";
 
 const Contact = ({ scrl }) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_clu5ntt",
+        "portfolio_site",
+        form.current,
+        "user_596t3dsMeOpG8cerl1t9V"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <Heading
@@ -11,33 +35,37 @@ const Contact = ({ scrl }) => {
       <div
         className="w-full sm:px-16 p-6 flex justify-center items-center"
         ref={scrl}>
-        <form className="sm:w-8/12">
+        <form ref={form} className="sm:w-8/12" onSubmit={sendEmail}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-                htmlFor="grid-first-name">
-                First Name
+                htmlFor="grid-full-name">
+                Full Name
               </label>
               <input
                 className="appearance-none block w-full bg-gray-900 text-white border-2 border-pink-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 focus:border-yellow-500"
-                id="grid-first-name"
+                id="grid-full-name"
                 type="text"
-                placeholder="Jane"
+                name="name"
+                placeholder="Jane Doe"
+                required
               />
               {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-                htmlFor="grid-last-name">
-                Last Name
+                htmlFor="grid-subject">
+                Subject
               </label>
               <input
                 className="appearance-none block w-full bg-gray-900 text-white border-2 border-pink-600 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-800 focus:border-yellow-500"
-                id="grid-last-name"
+                id="grid-subject"
                 type="text"
-                placeholder="Doe"
+                name="subject"
+                placeholder="Subject"
+                required
               />
             </div>
           </div>
@@ -45,14 +73,16 @@ const Contact = ({ scrl }) => {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-                htmlFor="grid-password">
+                htmlFor="grid-email">
                 Email Address
               </label>
               <input
                 className="appearance-none block w-full bg-gray-900 text-white border-2 border-pink-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 focus:border-yellow-500"
                 id="grid-email"
                 type="email"
-                placeholder="********@*****.**"
+                name="email"
+                placeholder="example@domain.com"
+                required
               />
             </div>
           </div>
@@ -61,12 +91,13 @@ const Contact = ({ scrl }) => {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-                htmlFor="grid-password">
+                htmlFor="grid-message">
                 Your Message
               </label>
               <textarea
                 rows="10"
                 className="appearance-none block w-full bg-gray-900 text-white border-2 border-pink-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 focus:border-yellow-500"
+                name="message"
                 placeholder="Your Message"></textarea>
             </div>
             <div className="flex justify-center w-full px-3">
