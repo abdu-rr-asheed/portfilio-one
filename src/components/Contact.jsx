@@ -1,14 +1,16 @@
 import React from "react";
 import Heading from "./Heading";
 
-const Contact = () => {
+const Contact = ({ scrl }) => {
   return (
     <>
       <Heading
         title="Contact Me"
         description="If you've seen my potential or want to talk to me, don't hesitate to send me a message."
       />
-      <div className="w-full sm:px-16 p-6 flex justify-center items-center">
+      <div
+        className="w-full sm:px-16 p-6 flex justify-center items-center"
+        ref={scrl}>
         <form className="sm:w-8/12">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">

@@ -11,12 +11,13 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { BsStackOverflow } from "react-icons/bs";
 
-export const Aboutme = () => {
+export const Aboutme = ({ scrl }) => {
+  console.log(scrl);
   return (
     <>
       <div
         className="m-4 flex justify-center items-center flex-wrap"
-        id="about">
+        ref={scrl}>
         <div className="md:w-1/2 flex justify-center items-center flex-col  my-10 md:my-0">
           {/* <img src={me} alt="me" id="melogo" /> */}
           <div className="relative md:h-[90vh] h-[300px] w-full">

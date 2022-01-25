@@ -1,8 +1,8 @@
 import React from "react";
 
-const Heading = ({ title, description }) => {
+const Heading = ({ title, description, scrl }) => {
   return (
-    <div className="text-white md:ml-10">
+    <div className="text-white md:ml-10" ref={scrl}>
       <div className="opacity-40">&emsp;&lt;h2&gt;</div>
       <div className="md:text-6xl text-5xl text-pink-600 code-font my-2 md:ml-12 ml-5 font-bold">
         {title}
