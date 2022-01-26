@@ -14,9 +14,9 @@ import wordpress from "./images/wordpress.svg";
 const Banner = () => {
   return (
     <div
-      className="relative flex justify-around items-center flex-wrap code overflow-hidden w-full"
+      className="relative flex justify-around items-center lg:flex-row md:flex-col flex-wrap code w-full"
       id="hero">
-      <div className="text-white md:pl-24 pl-4 my-10 md:my-0 md:w-1/2 w-full">
+      <div className="text-white md:pl-24 pl-4 my-10 md:my-0 lg:w-1/2 w-full">
         <div className="opacity-40">&lt;body&gt;</div>
         <div className="opacity-40">&emsp;&lt;whoami&gt;</div>
         <div className="md:text-6xl text-5xl font-bold code-font my-2 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
@@ -44,7 +44,7 @@ const Banner = () => {
         <div className="opacity-40">&emsp;&lt;&#47;aboutme&gt;</div>
         <div className="opacity-40">&lt;&#47;body&gt;</div>
       </div>
-      <div className="relative md:h-[90vh] h-[500px] my-10 md:my-0 md:w-1/2 w-full">
+      <div className="relative md:h-[90vh] h-[500px] my-10 md:my-0 lg:w-1/2 w-full">
         <iframe
           src="https://my.spline.design/charactor-389faed3c836ddc49c274b15d22eba47/"
           frameBorder="0"

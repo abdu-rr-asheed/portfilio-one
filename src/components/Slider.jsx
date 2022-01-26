@@ -49,8 +49,7 @@ const Slider = ({ scrl }) => {
           }}
           pagination={{
             dynamicBullets: true,
-          }}
-          className="">
+          }}>
           <SwiperSlide>
             <Portfolio
               portImg={sharemeimg}
