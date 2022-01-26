@@ -2,26 +2,28 @@ import React from "react";
 
 import { ImNewTab } from "react-icons/im";
 
-import html from "./images/html.svg";
-import figma from "./images/figma.svg";
-import css from "./images/css.svg";
-import js from "./images/js.svg";
-import reactimg from "./images/react.svg";
-import sanity from "./images/sanity.png";
-import tailwind from "./images/tailwind.svg";
-import wordpress from "./images/wordpress.svg";
-import lonmrtimg from "./images/londonMart/lmimage.png";
-import lonmrtlogo from "./images/londonMart/Logo.png";
-import sharemeimg from "./images/shareme/image.png";
-import sharemelogo from "./images/shareme/logo.png";
-import xmobileimg from "./images/xmobile/image.png";
-import xmobilelogo from "./images/xmobile/logo.png";
-import foodcoimg from "./images/foodco/image.png";
-import foodcologo from "./images/foodco/logo.png";
-import phloximg from "./images/phlox/image.png";
-import phloxlogo from "./images/phlox/logo.png";
-import rscimg from "./images/rsc/image.png";
-import rsclogo from "./images/rsc/logo.png";
+import {
+  html,
+  css,
+  js,
+  reactimg,
+  sanity,
+  wordpress,
+  figma,
+  tailwind,
+  lonmrtimg,
+  lonmrtlogo,
+  sharemeimg,
+  sharemelogo,
+  xmobileimg,
+  xmobilelogo,
+  foodcoimg,
+  foodcologo,
+  phloximg,
+  phloxlogo,
+  rscimg,
+  rsclogo,
+} from "./";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -68,7 +70,7 @@ const Slider = ({ scrl }) => {
               progLang={[html, css, js]}
               figmaLink="https://www.figma.com/proto/PwdhraYAPexkAjJm3ueIK0/LondonMart?page-id=0%3A1&node-id=2%3A2&scaling=scale-down-width"
               siteLink="https://abdu-rr-asheed.github.io/londonMart/"
-              description="This e-commerce site made by Wordpress. I Design User interface and User Experience"
+              description="This site is E-Commerce Site. I Designed Front-end for the site. build with HTML, CSS and JavaScript. I design UI/UX for the site. Deferent Sliders , Gallery page, Product View Page and Category page.My First complete website I have created"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -79,7 +81,7 @@ const Slider = ({ scrl }) => {
               progLang={[html, css, js]}
               figmaLink="https://www.figma.com/proto/I62oGu2dE9YykIuQx5T5aC/X-Mobile-Mockup?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.05&scaling=scale-down-width"
               siteLink="https://abdu-rr-asheed.github.io/xmobile/"
-              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript.I Designed Front-end part and UI/UX. In site Hero Sliders , offer Countdown , Compare page , filleter ,Product page and 360 product View. "
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -88,9 +90,9 @@ const Slider = ({ scrl }) => {
               imgColor="#313946"
               portLogo={rsclogo}
               progLang={[html, css, js]}
-              figmaLink="https://www.figma.com/proto/Vhy5kUFRdjNqcyVLZ6iXn5/RSC-Design?page-id=0%3A1&node-id=56%3A0&viewport=241%2C48%2C0.04&scaling=scale-down-width&starting-point-node-id=1%3A2"
+              figmaLink="https://www.figma.com/proto/Vhy5kUFRdjNqcyVLZ6iXn5/RSC-Design?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.04&scaling=scale-down-width&starting-point-node-id=1%3A2"
               siteLink="https://abdu-rr-asheed.github.io/royalSC/"
-              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+              description="This is a Campus website.build with HTML ,CSS and JavaScript.I Designed Front-end part and UI/UX."
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -100,7 +102,7 @@ const Slider = ({ scrl }) => {
               portLogo={phloxlogo}
               progLang={[wordpress]}
               siteLink="http://ecommercewordpress.epizy.com/"
-              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+              description="This is E-Commerce site.build with Wordpress, woo-commerce and elementor. This site build with my own for the study purpose"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -108,8 +110,8 @@ const Slider = ({ scrl }) => {
               portImg={foodcoimg}
               imgColor="#777a4b"
               portLogo={foodcologo}
-              figmaLink="https://www.figma.com/proto/I62oGu2dE9YykIuQx5T5aC/X-Mobile-Mockup?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.05&scaling=scale-down-width"
-              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript."
+              figmaLink="https://www.figma.com/proto/xr2lsCfD7pHD0ajTIAgaOQ/Foodco?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.09&scaling=scale-down-width"
+              description="This is static Food site. I have design UI/UX"
             />
           </SwiperSlide>
         </Swiper>

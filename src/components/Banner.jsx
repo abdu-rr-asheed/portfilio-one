@@ -1,15 +1,17 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import Typewriter from "typewriter-effect";
-import balls from "./images/balls.png";
-import html from "./images/html.svg";
-import figma from "./images/figma.svg";
-import css from "./images/css.svg";
-import js from "./images/js.svg";
-import reactimg from "./images/react.svg";
-import sanity from "./images/sanity.png";
-import tailwind from "./images/tailwind.svg";
-import wordpress from "./images/wordpress.svg";
+import {
+  html,
+  css,
+  js,
+  reactimg,
+  sanity,
+  wordpress,
+  figma,
+  tailwind,
+  balls,
+} from "./";
 
 const Banner = () => {
   return (
@@ -36,7 +38,8 @@ const Banner = () => {
             onInit={(typewriter) => {
               typewriter
                 .typeString("Front-end Developer | UI/UX Designer")
-                .pauseFor(1000)
+                .changeDelay(5000)
+                .pauseFor(2500)
                 .start();
             }}
           />

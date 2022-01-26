@@ -1,18 +1,19 @@
 import React from "react";
-import html from "./images/html.svg";
-import figma from "./images/figma.svg";
-import css from "./images/css.svg";
-import js from "./images/js.svg";
-import reactimg from "./images/react.svg";
-import sanity from "./images/sanity.png";
-import tailwind from "./images/tailwind.svg";
-import wordpress from "./images/wordpress.svg";
+import {
+  html,
+  css,
+  js,
+  reactimg,
+  sanity,
+  wordpress,
+  figma,
+  tailwind,
+} from "./";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { BsStackOverflow } from "react-icons/bs";
 
 export const Aboutme = ({ scrl }) => {
-  console.log(scrl);
   return (
     <>
       <div
