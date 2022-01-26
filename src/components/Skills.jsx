@@ -140,7 +140,7 @@ export default Skills;
 
 const Card = ({ logo, title, description }) => (
   <>
-    <div className="sm:w-[280px] w-[310px] h-[400px] bg-gray-800 p-6 rounded-xl overflow-hidden relative z-[1] border-r border-yellow-500 before:absolute before:-top-56 before:-left-56 before:w-[190px] before:h-[190px] before:rounded-none before:-z-[1] before:bg-gray-800 before:transition-all after:absolute after:-top-[72px] after:-left-[55px] after:w-[190px] after:h-[190px] after:rounded-full after:-z-[2] after:bg-yellow-600 after:bg-gradient-to-t after:from-yellow-500 after:to-pink-600 after:transition-all hover:before:-top-[72px] hover:before:-left-[55px] hover:before:rounded-full hover:after:w-[120%] hover:after:h-[120%] hover:after:-left-[10%] hover:after:-top-[10%] hover:after:rounded-none hover:after:transition-all">
+    <div className="sm:w-[280px] w-[310px] h-[400px] bg-gray-700 p-6 rounded-xl overflow-hidden relative z-[1] border-r border-yellow-500 before:absolute before:-top-56 before:-left-56 before:w-[190px] before:h-[190px] before:rounded-none before:-z-[1] before:bg-gray-700 before:transition-all after:absolute after:-top-[72px] after:-left-[55px] after:w-[190px] after:h-[190px] after:rounded-full after:-z-[2] after:bg-yellow-600 after:bg-gradient-to-t after:from-yellow-500 after:to-pink-600 after:transition-all hover:before:-top-[72px] hover:before:-left-[55px] hover:before:rounded-full hover:after:w-[120%] hover:after:h-[120%] hover:after:-left-[10%] hover:after:-top-[10%] hover:after:rounded-none hover:after:transition-all">
       <img src={logo} alt="logo" className="w-10 ml-3 mt-3" />
       <div className="text-white pt-14">
         <h5 className="mb-7 text-2xl capitalize">{title}</h5>
