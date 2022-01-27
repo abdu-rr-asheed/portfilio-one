@@ -47,7 +47,7 @@ const Banner = () => {
         <div className="opacity-40">&emsp;&lt;&#47;aboutme&gt;</div>
         <div className="opacity-40">&lt;&#47;body&gt;</div>
       </div>
-      <div className="relative md:h-[500px] h-[400px] my-10 md:my-0 lg:w-1/2 w-full">
+      <div className="relative h-[500px] my-10 md:my-0 lg:w-1/2 w-full">
         <iframe
           src="https://my.spline.design/charactor-389faed3c836ddc49c274b15d22eba47/"
           frameBorder="0"
