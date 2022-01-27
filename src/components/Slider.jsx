@@ -45,7 +45,7 @@ const Slider = ({ scrl }) => {
           spaceBetween={30}
           centeredSlides={true}
           // direction={"vertical"}
-          loop={false}
+          loop={true}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
@@ -132,7 +132,7 @@ const Portfolio = ({
   siteLink,
   description,
 }) => (
-  <div className="w-full grid place-items-center h-full md:mt-20 my-16">
+  <div className="w-full grid place-items-center md:mt-20 my-16">
     <div className="relative md:w-9/12 w-11/12">
       <img
         src={portImg}
