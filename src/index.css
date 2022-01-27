@@ -43,13 +43,13 @@ html {
   width: 100%;
   height: 100%;
 }
+.swiper-pagination {
+  color: rgb(255, 255, 255);
+}
 
 @layer components {
-  #app {
-    @apply h-full;
-  }
-  html {
-    @apply relative h-full;
+  #root {
+    @apply flex justify-center;
   }
   body {
     @apply relative text-sm text-black bg-gray-900 m-0 p-0 flex justify-center flex-col;

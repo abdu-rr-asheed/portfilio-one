@@ -44,13 +44,14 @@ const Slider = ({ scrl }) => {
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
+          // direction={"vertical"}
           loop={false}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
           }}
           pagination={{
-            dynamicBullets: true,
+            type: "fraction",
           }}>
           <SwiperSlide>
             <Portfolio

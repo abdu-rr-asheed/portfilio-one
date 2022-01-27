@@ -16,7 +16,7 @@ function App() {
   const skillssection = useRef(null);
   const contactsection = useRef(null);
   return (
-    <div className="flex flex-col h-full justify-center w-full p-2 md:p-0">
+    <div className="flex flex-col justify-center lg:max-w-[1356px] w-full p-2 md:p-0">
       <Sidebar
         aboutme={aboutmesection}
         portfolio={portfoliosection}

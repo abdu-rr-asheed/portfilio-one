@@ -16,12 +16,10 @@ import { BsStackOverflow } from "react-icons/bs";
 export const Aboutme = ({ scrl }) => {
   return (
     <>
-      <div
-        className="m-4 flex justify-center items-center flex-wrap"
-        ref={scrl}>
+      <div className="m-4 flex justify-center flex-wrap" ref={scrl}>
         <div className="md:w-1/2 flex justify-center items-center flex-col  my-10 md:my-0">
           {/* <img src={me} alt="me" id="melogo" /> */}
-          <div className="relative md:h-[90vh] h-[300px] w-full">
+          <div className="relative md:h-[500px] h-[300px] w-full">
             <iframe
               src="https://abdu-rr-asheed.github.io/imagepixa/"
               frameBorder="0"
