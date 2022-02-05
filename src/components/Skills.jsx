@@ -36,7 +36,13 @@ const Skills = ({ scrl }) => {
       <Heading title="Skills" scrl={scrl} />
       <div className="flex justify-around items-center flex-wrap overflow-x-hidden">
         <div className="w-[310px] h-[400px] my-7 mx-2">
-          <Swiper effect={"cards"} grabCursor={true}>
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}>
             <SwiperSlide className="rounded-xl">
               <Card
                 logo={html}
@@ -75,7 +81,13 @@ const Skills = ({ scrl }) => {
           </Swiper>
         </div>
         <div className="w-[310px] h-[400px] my-7 mx-2">
-          <Swiper effect={"cards"} grabCursor={true}>
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}>
             <SwiperSlide className="rounded-xl">
               <Card
                 logo={wordpress}
@@ -100,7 +112,13 @@ const Skills = ({ scrl }) => {
           </Swiper>
         </div>
         <div className="w-[310px] h-[400px] my-7 mx-2">
-          <Swiper effect={"cards"} grabCursor={true}>
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}>
             <SwiperSlide className="rounded-xl">
               <Card
                 logo={figma}

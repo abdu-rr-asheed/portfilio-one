@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
       </div>
       <h2 className="text-pink-600 text-xl flex justify-center items-center my-4">
-        This Site Made With&nbsp;
+        {"</>"} With&nbsp;
         <img src={reactimg} alt="icon" className="w-6 h-6" />
         &nbsp;
         <img src={tailwind} alt="icon" className="w-6 h-6" />
@@ -27,25 +27,25 @@ const Footer = () => {
       </h2>
       <div className="flex justify-center items-center my-4">
         <a
-          href=""
+          href="https://www.facebook.com/abdur.rasheed.12720/"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
           <FaFacebookF fontSize={20} />
         </a>
         <a
-          href=""
+          href="https://github.com/abdu-rr-asheed"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out duration-100 hover:-translate-y-1 hover:scale-110">
           <AiFillGithub fontSize={20} />
         </a>
         <a
-          href=""
+          href="https://stackoverflow.com/users/14837324/abdur-rasheed"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
           <BsStackOverflow fontSize={20} />
         </a>
         <a
-          href=""
+          href="https://www.linkedin.com/in/abdur-rasheed-430/"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
           <FaLinkedinIn fontSize={20} />
